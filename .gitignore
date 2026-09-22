@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# --- virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- editors and OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- experiment output ---
+# The numbered figures and the result JSONs are committed on purpose: the README
+# embeds the figures, and the JSONs are the record of where its numbers came
+# from. Everything else these experiments write is scratch.
+figures/*
+!figures/[0-9][0-9]_*.png
+results/*
+
+# --- data ---
+# Archival visibilities are large and not ours to redistribute. The .npz
+# interchange format is data too, wherever it lands.
+data/
+*.uvfits
+*.fits
+*.ms/
+*.npz
+*.log
+
+HANDOVER.md
